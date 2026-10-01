@@ -6,3 +6,16 @@ venv/
 .venv/
 __pycache__/
 .DS_Store
+.claude/
+.tmp-browser-profile/
+.tmp-browser-profile-2/
+pathly-preview.png
+.tmp-browser-profile-3/
+.tmp-direct-dom.html
+.tmp-direct-browser.err
+.tmp-browser-profile-4/
+.tmp-direct-dom-2.html
+.tmp-direct-browser-2.err
+.tmp-browser-profile-5/
+.tmp-direct-dom-3.html
+.tmp-direct-browser-3.err
