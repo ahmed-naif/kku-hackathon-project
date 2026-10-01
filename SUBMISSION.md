@@ -1,5 +1,5 @@
 Name: Ahmed Naif Alahmary
-Email (the one I registered with): 444810930@kku.edu.sa
+Email (the one I registered with):
 Cohort (girls or boys): boys
 Project option: pathly
 Problem: Students and early-career professionals often repeat the same information across profiles, CVs, portfolios, and career planning tools, while receiving unclear next steps.
