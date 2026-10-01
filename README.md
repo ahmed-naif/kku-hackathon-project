@@ -25,7 +25,7 @@ Pathly opens with a fully made-up example profile. Select **Load example** at an
 
 ## CV, portfolio, and guidance
 
-- The CV Builder provides Modern, Classic, and Focused layouts. Select **Print / Save as PDF**, then choose **Save as PDF** in your browser print dialog.
+- The CV Builder provides three layouts from the same local profile: **Classic** is a chronological single-column CV, **Modern** uses a sidebar for contact details and skills, and **Editorial** leads with projects beneath a strong masthead. Each is designed to use A4 efficiently; longer profiles flow onto additional pages. Select **Print / Save as PDF**, then choose **Save as PDF** in your browser print dialog.
 - The Portfolio Builder provides Minimal, Modern, Creative, and Professional layouts. **Download portfolio HTML** creates a self-contained file that you can host yourself. Browser-stored data is never automatically published.
 - Career Advisor provides transparent, rule-based guidance from the profile and career goal you enter. It does not call an AI service or invent experience, qualifications, or skills.
 
