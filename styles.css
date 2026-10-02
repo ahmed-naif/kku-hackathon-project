@@ -205,6 +205,8 @@ input:focus, textarea:focus { border-color: var(--focus); box-shadow: 0 0 0 3px 
 .cv-inline-list { line-height: 1.7 !important; }
 .cv-tag-list { color: var(--cv-copy); line-height: 1.7 !important; }
 .cv-compact-list { display: grid; gap: .38rem; padding-inline-start: 1rem; }
+.cv-credential-link, .portfolio-credential-link { color: var(--cv-accent-strong, var(--portfolio-accent-strong)); font-weight: 800; overflow-wrap: anywhere; text-decoration-color: var(--cv-accent-rule, var(--portfolio-accent-rule)); text-underline-offset: .16em; }
+.portfolio-credential-link { color: var(--portfolio-accent-strong); }
 .empty-document { padding: 5rem 0; text-align: center; }
 .empty-document p { color: var(--cv-muted); }
 
@@ -418,7 +420,7 @@ html[dir="rtl"] .cv-entry small { white-space: normal; text-align: end; }
   .cv-header, .cv-header h2, .cv-entry h4 { color: var(--cv-ink) !important; }
   .cv-goal, .cv-contacts, .cv-entry small, .cv-entry-org, .cv-section > p, .cv-entry p, .cv-compact-list, .cv-editorial-deck { color: var(--cv-muted) !important; }
   .cv-paper .pathly-logo { --pathly-logo-color: #5b3822; }
-  .cv-section h3, .cv-sidebar .cv-section h3, .cv-editorial-support .cv-section h3, .cv-work-link { color: var(--cv-accent-strong) !important; }
+  .cv-section h3, .cv-sidebar .cv-section h3, .cv-editorial-support .cv-section h3, .cv-work-link, .cv-credential-link { color: var(--cv-accent-strong) !important; }
   .cv-contacts a { text-decoration-color: var(--cv-accent-rule) !important; }
   .cv-modern-header { border-bottom-color: var(--cv-accent-rule) !important; border-inline-start-color: var(--cv-accent-rule) !important; }
   .cv-modern-grid { grid-template-columns: minmax(0, 1fr) minmax(42mm, 31%) !important; }

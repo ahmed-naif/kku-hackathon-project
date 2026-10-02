@@ -19,7 +19,7 @@ window.PathlyExampleData = {
       experience: [{ role: "Digital Projects Intern", company: "Brightfield Studio", start: isoMonthsAgo(14), end: "", description: "Supported accessible website improvements and collaborated on clear product documentation." }],
       skills: ["HTML", "CSS", "JavaScript", "Git", "Figma"],
       projects: [{ name: "Campus Compass", description: "A simple student guide that turns university services into clear next steps.", tools: "HTML, CSS, JavaScript", link: "" }, { name: "Study Circle", description: "A responsive planning concept for focused peer learning sessions.", tools: "Figma, Accessibility", link: "" }],
-      certifications: [{ name: "Foundations of UX Design", issuer: "Open Learning Lab", date: isoMonthsAgo(8), link: "" }],
+      certifications: [{ name: "Foundations of UX Design", issuer: "Open Learning Lab", date: isoMonthsAgo(8), link: "https://credentials.example.test/foundations-ux-design" }],
       languages: ["English", "Arabic"],
       cvTemplate: "modern",
       portfolioTemplate: "modern",
