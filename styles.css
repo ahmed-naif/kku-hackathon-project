@@ -80,6 +80,7 @@ h1 { max-width: 900px; margin-bottom: 1.25rem; font-family: var(--serif); font-s
 h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.15rem); font-weight: 500; letter-spacing: -.045em; }
 h3 { font-size: 1.15rem; }
 p { color: var(--muted); }
+.hero-title { max-width: none; margin: 0 0 clamp(.3rem, .8vw, .65rem); font-family: Georgia, "Times New Roman", serif; font-size: clamp(4.5rem, 13vw, 10.5rem); font-weight: 600; letter-spacing: -.08em; line-height: .9; white-space: nowrap; }
 .hero-tagline { max-width: 38rem; margin: 0; color: var(--muted); font-size: clamp(.95rem, 1.4vw, 1.1rem); font-weight: 650; letter-spacing: .015em; }
 .hero-headline { max-width: min(680px, 100%); margin: clamp(.35rem, 1.4vw, .85rem) 0 0; font-size: clamp(1.9rem, 4.2vw, 4rem); font-weight: 500; text-wrap: balance; }
 .hero-copy { max-width: min(660px, 100%); margin: 0; font-size: clamp(1.05rem, 2vw, 1.3rem); }
@@ -379,6 +380,7 @@ dialog::backdrop { background: rgba(28, 19, 13, .52); }
   .profile-actions .button { flex: 1; }
   .cv-paper { margin-inline: -1rem; border-inline: 0; }
   .hero { min-block-size: auto; gap: .55rem; padding-block: 2.75rem 3.25rem; }
+  .hero-title { margin-block-end: .55rem; font-size: clamp(4rem, 20vw, 6.9rem); }
   .hero-watermark { width: min(42vw, 165px); margin-block-start: .35rem; opacity: .045; }
   .hero-headline { margin-top: .45rem; }
 }
@@ -387,6 +389,7 @@ html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] .form-heading h2, html[d
 html[dir="rtl"] h1, html[dir="rtl"] h2 { line-height: 1.25; }
 html[dir="rtl"] .hero-content { justify-items: start; }
 html[dir="rtl"] .hero { padding-block-end: clamp(3.25rem, 8vw, 6rem); }
+html[dir="rtl"] .hero-title { margin-block-end: clamp(.45rem, 1.2vw, .85rem); font-family: Georgia, "Times New Roman", serif; letter-spacing: -.08em; line-height: .9; }
 @media (min-width: 620px) {
   html[dir="rtl"] .hero-content { grid-column: 2; }
   html[dir="rtl"] .hero-watermark { grid-column: 1; justify-self: start; }
