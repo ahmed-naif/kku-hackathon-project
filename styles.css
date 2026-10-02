@@ -69,10 +69,10 @@ html[dir="rtl"] .brand-tagline, html[dir="rtl"] .document-context { direction: r
 .landing-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .9rem; }
 .landing-controls { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: .55rem; }
 .landing-controls .toolbar { margin-inline-start: 0; }
-.hero { position: relative; isolation: isolate; min-block-size: min(72dvh, 700px); display: grid; align-content: center; padding-block: clamp(2.75rem, 7vw, 5.5rem); overflow: clip; }
-.hero-content { position: relative; z-index: 1; display: grid; justify-items: start; gap: clamp(.72rem, 1.35vw, 1.05rem); }
-.hero-watermark { position: absolute; z-index: 0; right: clamp(-4rem, 2vw, 2rem); bottom: clamp(1rem, 8vw, 5rem); color: var(--primary); opacity: .07; pointer-events: none; }
-.hero-watermark .pathly-logo { --pathly-logo-size: min(46vw, 620px); }
+.hero { position: relative; isolation: isolate; min-block-size: min(72dvh, 700px); display: grid; align-content: center; gap: 1rem; padding-block: clamp(2.75rem, 7vw, 5.5rem); overflow: clip; }
+.hero-content { position: relative; z-index: 1; order: 1; display: grid; justify-items: start; gap: clamp(.72rem, 1.35vw, 1.05rem); }
+.hero-watermark { z-index: 0; order: 2; justify-self: end; width: min(48vw, 220px); margin-block-start: .25rem; color: var(--primary); opacity: .055; pointer-events: none; }
+.hero-watermark .pathly-logo { --pathly-logo-size: 100%; }
 .eyebrow { margin-bottom: .8rem; color: var(--gold); font-size: .75rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 h1, h2, h3, h4, p { overflow-wrap: anywhere; }
 h1, h2, h3, h4 { margin-top: 0; color: var(--ink); line-height: 1.08; }
@@ -331,6 +331,13 @@ dialog::backdrop { background: rgba(28, 19, 13, .52); }
   .portfolio-document--creative .portfolio-creative-support { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cv-editorial-support { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .advisor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero { grid-template-columns: minmax(0, 1fr) minmax(150px, 30%); align-items: center; column-gap: clamp(1.5rem, 6vw, 5rem); }
+  .hero-content { grid-column: 1; }
+  .hero-watermark { grid-column: 2; grid-row: 1; width: min(100%, 260px); margin: 0; justify-self: end; opacity: .07; }
+}
+@media (min-width: 900px) {
+  .hero { grid-template-columns: minmax(0, 1fr) minmax(240px, 34%); }
+  .hero-watermark { width: min(100%, 360px); }
 }
 @media (min-width: 900px) {
   .primary-nav { display: flex; }
@@ -371,9 +378,8 @@ dialog::backdrop { background: rgba(28, 19, 13, .52); }
   .profile-actions, .action-stack { justify-content: flex-start; }
   .profile-actions .button { flex: 1; }
   .cv-paper { margin-inline: -1rem; border-inline: 0; }
-  .hero { min-block-size: auto; padding-block: 2.75rem 3.75rem; }
-  .hero-watermark { right: -4rem; bottom: 1rem; opacity: .05; }
-  .hero-watermark .pathly-logo { --pathly-logo-size: min(58vw, 300px); }
+  .hero { min-block-size: auto; gap: .55rem; padding-block: 2.75rem 3.25rem; }
+  .hero-watermark { width: min(42vw, 165px); margin-block-start: .35rem; opacity: .045; }
   .hero-headline { margin-top: .45rem; }
 }
 html[dir="rtl"] { --sans: Tahoma, "Segoe UI", Arial, sans-serif; --serif: Tahoma, "Segoe UI", Arial, sans-serif; }
@@ -381,6 +387,10 @@ html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] .form-heading h2, html[d
 html[dir="rtl"] h1, html[dir="rtl"] h2 { line-height: 1.25; }
 html[dir="rtl"] .hero-content { justify-items: start; }
 html[dir="rtl"] .hero { padding-block-end: clamp(3.25rem, 8vw, 6rem); }
+@media (min-width: 620px) {
+  html[dir="rtl"] .hero-content { grid-column: 2; }
+  html[dir="rtl"] .hero-watermark { grid-column: 1; justify-self: start; }
+}
 html[dir="rtl"] .hero-headline { max-inline-size: min(620px, 100%); line-height: 1.32; overflow-wrap: normal; text-wrap: pretty; }
 html[dir="rtl"] .hero-tagline { line-height: 1.65; letter-spacing: normal; }
 html[dir="rtl"] .hero-copy { line-height: 1.6; overflow-wrap: normal; }

@@ -5,7 +5,9 @@
   const app = document.querySelector('#app');
   const toast = document.querySelector('#toast');
   let photoObjectUrl = '';
-  const LOGO_SVG = '<svg class="pathly-logo __CLASS__" viewBox="0 0 144 48" __ACCESSIBILITY__ focusable="false" dir="ltr" preserveAspectRatio="xMinYMid meet"><path d="M7 35.5h9.2c4.5 0 6.2-8.2 10.8-14.7 3.3-4.7 6.6-7.3 14-7.3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path><path d="m34.2 6.8 7.2 6.7-7.2 6.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path><circle cx="7" cy="35.5" r="3.6" fill="currentColor"></circle><circle cx="20.6" cy="31.8" r="2.3" fill="currentColor"></circle><text x="56" y="34" fill="currentColor" font-family="Georgia, Times New Roman, serif" font-size="30" font-weight="600" letter-spacing="-1.35">Pathly</text></svg>';
+  const LOGO_ROUTE = '<path d="M13.5 35.5H21V28h9V19.5h10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.25"></path><path d="m34 13.5 6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.25"></path><circle cx="7.5" cy="35.5" r="3.5" fill="currentColor"></circle>';
+  const LOGO_SVG = `<svg class="pathly-logo __CLASS__" viewBox="0 0 150 48" __ACCESSIBILITY__ focusable="false" dir="ltr" preserveAspectRatio="xMinYMid meet">${LOGO_ROUTE}<text x="57" y="34" fill="currentColor" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="600" letter-spacing="-1.2">Pathly</text></svg>`;
+  const LOGO_MARK_SVG = `<svg class="pathly-logo __CLASS__" viewBox="0 0 48 48" __ACCESSIBILITY__ focusable="false" dir="ltr" preserveAspectRatio="xMidYMid meet">${LOGO_ROUTE}</svg>`;
 
   const COPY = {
     en: {
@@ -95,11 +97,11 @@
   function applyDocumentSettings() { document.documentElement.lang = prefs.language; document.documentElement.dir = prefs.language === 'ar' ? 'rtl' : 'ltr'; document.documentElement.dataset.theme = prefs.theme; document.title = `Pathly — ${t('tagline')}`; }
   function navItem(view, label) { return `<button class="nav-item ${prefs.view === view ? 'is-active' : ''}" data-view="${view}" type="button">${label}</button>`; }
   function toggleButton() { return `<div class="toolbar"><button class="utility-button" data-action="language" type="button" aria-label="${t('language')}">${t('language')}</button><button class="utility-button" data-action="theme" type="button" aria-label="${prefs.theme === 'light' ? t('theme') : t('themeLight')}">${prefs.theme === 'light' ? '◐' : '◑'} <span>${prefs.theme === 'light' ? t('theme') : t('themeLight')}</span></button></div>`; }
-  function pathlyLogo(className = '', decorative = false) { const accessibility = decorative ? 'aria-hidden="true"' : 'role="img" aria-label="Pathly"'; return LOGO_SVG.replace('__CLASS__', className).replace('__ACCESSIBILITY__', accessibility); }
+  function pathlyLogo(className = '', decorative = false, markOnly = false) { const accessibility = decorative ? 'aria-hidden="true"' : 'role="img" aria-label="Pathly"'; const source = markOnly ? LOGO_MARK_SVG : LOGO_SVG; return source.replace('__CLASS__', className).replace('__ACCESSIBILITY__', accessibility); }
   function brandLockup(className = '') { return `<span class="brand-lockup ${className}">${pathlyLogo('pathly-logo--header', true)}<small class="brand-tagline" dir="auto">${t('tagline')}</small></span>`; }
   function brandButton(className = '') { return `<button class="brand ${className}" data-view="landing" type="button" aria-label="Pathly">${brandLockup()}</button>`; }
   function documentBrand(context) { return `<div class="document-brand">${pathlyLogo('pathly-logo--document')}<span class="document-context">${context}</span></div>`; }
-  function heroWatermark() { return `<div class="hero-watermark" aria-hidden="true">${pathlyLogo('pathly-logo--watermark', true)}</div>`; }
+  function heroWatermark() { return `<div class="hero-watermark" aria-hidden="true">${pathlyLogo('pathly-logo--watermark', true, true)}</div>`; }
   function header() { return `<header class="topbar">${brandButton()}<nav class="primary-nav" aria-label="Pathly">${navItem('dashboard', t('dashboard'))}${navItem('profile', t('profile'))}${navItem('cv', t('cv'))}${navItem('portfolio', t('portfolio'))}${navItem('advisor', t('advisor'))}</nav>${toggleButton()}</header>`; }
 
   function landing() { return `<main id="main-content" class="landing">
