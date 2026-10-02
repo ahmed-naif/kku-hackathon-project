@@ -391,8 +391,8 @@ html[dir="rtl"] .hero-content { justify-items: start; }
 html[dir="rtl"] .hero { padding-block-end: clamp(3.25rem, 8vw, 6rem); }
 html[dir="rtl"] .hero-title { margin-block-end: clamp(.45rem, 1.2vw, .85rem); font-family: Georgia, "Times New Roman", serif; letter-spacing: -.08em; line-height: .9; }
 @media (min-width: 620px) {
-  html[dir="rtl"] .hero-content { grid-column: 2; }
-  html[dir="rtl"] .hero-watermark { grid-column: 1; justify-self: start; }
+  html[dir="rtl"] .hero-content { grid-column: 1; }
+  html[dir="rtl"] .hero-watermark { grid-column: 2; justify-self: end; }
 }
 html[dir="rtl"] .hero-headline { max-inline-size: min(620px, 100%); line-height: 1.32; overflow-wrap: normal; text-wrap: pretty; }
 html[dir="rtl"] .hero-tagline { line-height: 1.65; letter-spacing: normal; }
