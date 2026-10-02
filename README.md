@@ -35,7 +35,7 @@ Pathly does not create accounts, collect analytics, or send profile information 
 
 ## Responsive and accessible design
 
-The interface is designed for phone, tablet, laptop, desktop, and large screens. It supports full Arabic RTL layout, keyboard navigation, visible focus states, readable light/dark color themes, and print-friendly CV output. The original Pathly route mark is drawn inline in the app, so it adds no external asset or network dependency. Template and palette choices stay only in the current browser alongside the saved profile.
+The interface is designed for phone, tablet, laptop, desktop, and large screens. It supports full Arabic RTL layout, keyboard navigation, visible focus states, readable light/dark color themes, and print-friendly CV output. One original Pathly inline SVG lockup is reused in headers, landing artwork, CVs, portfolios, and downloaded portfolios, so it adds no external asset or network dependency. The logo stays visually LTR and untransformed in Arabic while surrounding content follows RTL; document palette choices affect document accents, not the Pathly logo. Template and palette choices stay only in the current browser alongside the saved profile.
 
 Built with Claude Code during the KKU Claude Code hackathon
 
