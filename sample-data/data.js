@@ -22,7 +22,9 @@ window.PathlyExampleData = {
       certifications: [{ name: "Foundations of UX Design", issuer: "Open Learning Lab", date: isoMonthsAgo(8), link: "" }],
       languages: ["English", "Arabic"],
       cvTemplate: "modern",
-      portfolioTemplate: "modern"
+      portfolioTemplate: "modern",
+      cvPalette: "ocher",
+      portfolioPalette: "ocher"
     };
   }
 };

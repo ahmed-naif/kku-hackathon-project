@@ -25,8 +25,8 @@ Pathly opens with a fully made-up example profile. Select **Load example** at an
 
 ## CV, portfolio, and guidance
 
-- The CV Builder provides three distinct layouts from the same local profile: **Classic** is a formal chronological single-column CV, **Modern** uses a contemporary profile rail for contact details and skills, and **Editorial** leads with projects beneath a strong typographic masthead. Each is designed to use A4 efficiently; longer profiles flow onto additional pages. Select **Print / Save as PDF**, then choose **Save as PDF** in your browser print dialog.
-- The Portfolio Builder provides four distinct layouts: **Minimal** is spacious and typography-led, **Modern** is a project-card grid with a supporting rail, **Creative** uses an expressive featured-work composition, and **Professional** is a structured business-focused dossier. **Download portfolio HTML** creates a self-contained snapshot of the selected layout, current language direction, and theme that you can open or host yourself. Browser-stored data is never automatically published.
+- The CV Builder provides three distinct layouts from the same local profile: **Classic** is a formal chronological single-column CV, **Modern** uses a contemporary profile rail for contact details and skills, and **Editorial** leads with projects beneath a strong typographic masthead. Each is designed to use A4 efficiently; longer profiles flow onto additional pages. Choose a named document accent color in the builder, then select **Print / Save as PDF** and choose **Save as PDF** in your browser print dialog. For the clearest color output, enable background graphics in the print dialog when it is available.
+- The Portfolio Builder provides four distinct layouts: **Minimal** is spacious and typography-led, **Modern** is a project-card grid with a supporting rail, **Creative** uses an expressive featured-work composition, and **Professional** is a structured business-focused dossier. It has its own named accent-color choice. **Download portfolio HTML** creates a self-contained snapshot of the selected layout, accent, current language direction, and theme that you can open or host yourself. Browser-stored data is never automatically published.
 - Career Advisor provides transparent, rule-based guidance from the profile and career goal you enter. It does not call an AI service or invent experience, qualifications, or skills.
 
 ## Privacy
@@ -35,7 +35,7 @@ Pathly does not create accounts, collect analytics, or send profile information 
 
 ## Responsive and accessible design
 
-The interface is designed for phone, tablet, laptop, desktop, and large screens. It supports full Arabic RTL layout, keyboard navigation, visible focus states, readable light/dark color themes, and print-friendly CV output.
+The interface is designed for phone, tablet, laptop, desktop, and large screens. It supports full Arabic RTL layout, keyboard navigation, visible focus states, readable light/dark color themes, and print-friendly CV output. The original Pathly route mark is drawn inline in the app, so it adds no external asset or network dependency. Template and palette choices stay only in the current browser alongside the saved profile.
 
 Built with Claude Code during the KKU Claude Code hackathon
 
